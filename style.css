@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 60rem;
+  height: 30rem;
+  overflow: hidden;
+  position: relative;
+  border: 0.5rem solid black;
+  margin-top: 5rem;
+  border-radius: 3px;
+}
+.container img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 1s;
+}
+
+.buttons {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 2px;
+  border: 1px solid lightgrey;
+}
+#activeSlide {
+  position: absolute;
+  display: flex;
+  gap: 0.5rem;
+  bottom: 0;
+  left: 42%;
+}
+#activeSlide span {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background-color: grey;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 2100px) {
+  .container {
+    width: 100rem;
+    height: 50rem;
+    border: 0.8rem solid black;
+  }
+  .btn {
+    font-size: 4rem;
+  }
+  #activeSlide span {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .container {
+    width: 40rem;
+    height: 20rem;
+    border: 0.2rem solid black;
+  }
+  .btn {
+    font-size: 1rem;
+  }
+  #activeSlide span {
+    width: 0.7rem;
+    height: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 482px) {
+  .container {
+    width: 24rem;
+    height: 12rem;
+    border: 0.2rem solid black;
+  }
+  .btn {
+    font-size: 0.8rem;
+  }
+  #activeSlide span {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+}
