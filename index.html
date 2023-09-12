@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <img class="singleImage" src="images/one (1).jpg" alt="">
+            <img class="singleImage" src="images/one (2).jpg" alt="">
+            <img class="singleImage" src="images/one (3).jpg" alt="">
+            <img class="singleImage" src="images/one (4).jpg" alt="">
+            <img class="singleImage" src="images/one (5).jpg" alt="">
+            <img class="singleImage" src="images/one (6).jpg" alt="">
+            <div class="buttons">
+
+                <button class="btn" onclick="handlePrevious()" id="previous">
+                    < </button>
+                        <button class="btn" onclick="handleNext()" id="next">> </button>
+            </div>
+            <div id="activeSlide">
+                <span id="0" onclick="handleSlide('0')"></span>
+                <span id="1" onclick="handleSlide('1')"></span>
+                <span id="2" onclick="handleSlide('2')"></span>
+                <span id="3" onclick="handleSlide('3')"></span>
+                <span id="4" onclick="handleSlide('4')"></span>
+                <span id="5" onclick="handleSlide('5')"></span>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
